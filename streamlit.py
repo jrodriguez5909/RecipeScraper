@@ -181,6 +181,7 @@ recs = st.text_input('', help='e.g., https://www.hellofresh.nl/recipes/chicken-p
 download = st.button('Grab ingredient list')
 
 if download:
+    recs = recs.split(",")
     df_download = create_df(recs)
     csv = df_download.to_csv()
     b64 = base64.b64encode(csv.encode()).decode()  # some strings
