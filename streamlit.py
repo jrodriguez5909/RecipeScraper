@@ -176,7 +176,8 @@ def create_df(recipes):
     return res
 
 
-recs = st.text_input('', help='e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10')
+recs = st.text_input('')
+# recs = st.text_input('', help='e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10')
 
 download = st.button('Grab ingredient list')
 
