@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./img/mise-en-place.jpeg" alt="Statoscope example" width="400">
+  <img src="https://images.unsplash.com/photo-1577308856961-8e9ec50d0c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMG9uJTIwdGFibGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="Statoscope example" width="400">
 </p>
 
 # Top Daily Stock Losers & Trading Opportunities

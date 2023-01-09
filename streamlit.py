@@ -8,7 +8,7 @@ st.write("""
 # Recipe Scraper
 """)
 
-st.image("https://github.com/jrodriguez5909/RecipeScraper/blob/main/img/mise-en-plase.jpeg", caption="What's for dinner?")
+st.image("https://images.unsplash.com/photo-1577308856961-8e9ec50d0c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMG9uJTIwdGFibGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", caption="What's for dinner?")
 
 st.write("""
 1. Populate the text box below with URLs for recipes you'd like to gather ingredient from - separate the URLs with commas e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10, https://www.hellofresh.nl/recipes/quiche-met-broccoli-en-oude-kaas-628665b01dea7b8f5009b248
