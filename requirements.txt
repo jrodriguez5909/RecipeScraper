@@ -2,3 +2,4 @@ numpy==1.23.5
 pandas==1.3.5
 streamlit==0.76.0
 recipe-scrapers==14.26.0
+stqdm~=0.0.5

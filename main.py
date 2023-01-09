@@ -55,10 +55,8 @@ def create_df(recipes):
     """
     Description:
     Creates one df with all recipes and their ingredients
-
     Arguments:
     * recipes: list of recipe URLs provided by user
-
     Comments:
     Note that ingredients with qualitative amounts e.g., "scheutje melk", "snufje zout" have been ommitted from the ingredient list
     """
@@ -103,7 +101,8 @@ def create_df(recipes):
                     'Kipshoarma': ('Kalkoenshoarma')
                     }
 
-    reverse_label_ing = {x:k for k,v in ingredient_dict.items() for x in v}
+    # reverse_label_ing = {x:k for k,v in ingredient_dict.items() for x in v}
+    reverse_label_ing = {x: k for k, v in ingredient_dict.items() for x in (v if isinstance(v, tuple) else (v,))}
     df["Ingredients"].replace(reverse_label_ing, inplace=True)
 
     print("Assigning ingredient categories")
@@ -113,13 +112,13 @@ def create_df(recipes):
                                'Gesneden snijbonen', 'Jasmijnrijst', 'Linzen', 'Ma√Øs in blik',
                                'Parelcouscous', 'Penne', 'Rigatoni', 'Rode kidneybonen',
                                'Spaghetti', 'Witte tortilla'),
-                    'groenten': ('Aardappelen', 'Aubergine', 'Bosui', 'Broccoli',
+                    'groenten': ('Aardappelen', 'Aubergine', 'Bosui', 'Broccoli', 'Ui',
                                  'Champignons', 'Citroen', 'Gele wortel', 'Gesneden rodekool',
                                  'Groene paprika', 'Groentemix van paprika, prei, gele wortel en courgette',
                                  'IJsbergsla', 'Kumato tomaat', 'Limoen', 'Little gem',
-                                 'Paprika', 'Portobello', 'Prei', 'Pruimtomaat',
+                                 'Paprika', 'Portobello', 'Prei', 'Pruimtomaat', 'Knoflookteen',
                                  'Radicchio en ijsbergsla', 'Rode cherrytomaten', 'Rode paprika', 'Rode peper',
-                                 'Rode puntpaprika', 'Rode ui', 'Rucola', 'Rucola en veldsla', 'Rucolamelange',
+                                 'Rode puntpaprika', 'Ui', 'Rucola', 'Rucola en veldsla', 'Rucolamelange',
                                  'Semi-gedroogde tomatenmix', 'Sjalot', 'Sperziebonen', 'Spinazie', 'Tomaat',
                                  'Turkse groene peper', 'Veldsla', 'Vers basilicum', 'Verse bieslook',
                                  'Verse bladpeterselie', 'Verse koriander', 'Verse krulpeterselie', 'Wortel', 'Zoete aardappel'),
@@ -127,12 +126,12 @@ def create_df(recipes):
                                 'Extra vierge olijfolie met truffelaroma', 'Fles olijfolie', 'Gedroogde laos',
                                 'Gedroogde oregano', 'Gemalen kaneel', 'Gemalen komijnzaad', 'Gemalen korianderzaad',
                                 'Gemalen kurkuma', 'Gerookt paprikapoeder', 'Groene currykruiden', 'Groentebouillon',
-                                'Groentebouillonblokje', 'Honing', 'Italiaanse kruiden', 'Kippenbouillonblokje', 'Knoflookteen',
+                                'Groentebouillonblokje', 'Honing', 'Italiaanse kruiden', 'Kippenbouillonblokje',
                                 'Kokosmelk', 'Koreaanse kruidenmix', 'Mayonaise', 'Mexicaanse kruiden', 'Midden-Oosterse kruidenmix',
                                 'Mosterd', 'Nootmuskaat', 'Olijfolie', 'Panko paneermeel', 'Paprikapoeder', 'Passata',
                                 'Pikante uienchutney', 'Runderbouillonblokje', 'Sambal', 'Sesamzaad', 'Siciliaanse kruidenmix',
                                 'Sojasaus', 'Suiker', 'Sumak', 'Surinaamse kruiden', 'Tomatenblokjes', 'Tomatenblokjes met ui',
-                                'Truffeltapenade', 'Ui', 'Verse gember', 'Visbouillon', 'Witte balsamicoazijn', 'Wittewijnazijn',
+                                'Truffeltapenade', 'Verse gember', 'Visbouillon', 'Witte balsamicoazijn', 'Wittewijnazijn',
                                 'Zonnebloemolie', 'Zwarte balsamicoazijn'),
                     'vlees': ('Gekruide runderburger', 'Half-om-half gehaktballetjes met Spaanse kruiden', 'Kipfilethaasjes', 'Kipfiletstukjes',
                               'Kipgehaktballetjes met Italiaanse kruiden', 'Kippendijreepjes', 'Kipshoarma', 'Kipworst', 'Spekblokjes',
@@ -163,6 +162,12 @@ def create_df(recipes):
     res = res.fillna(0)
     res['Total'] = res.drop(['Ingredients', 'Measurement'], axis=1).sum(axis=1)
     res=res[res['Total'] !=0] #To drop rows that are being duplicated with 0 for some reason; will check later
+
+    # Place "Total" column towards front
+    col = "Total"
+    first_col = res.pop(col)
+    res.insert(3, col, first_col)
+    res = res.reset_index(drop=True)
 
     print("Processing complete!")
 
