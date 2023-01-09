@@ -8,10 +8,9 @@ st.write("""
 # Recipe Scraper
 """)
 
-# st.image("./img/mise-en-place.jpeg", caption="What's for dinner?")
+st.image("https://github.com/jrodriguez5909/RecipeScraper/blob/main/img/mise-en-plase.jpeg", caption="What's for dinner?")
 
 st.write("""
-# Recipe Scraper
 1. Populate the text box below with URLs for recipes you'd like to gather ingredient from - separate the URLs with commas e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10, https://www.hellofresh.nl/recipes/quiche-met-broccoli-en-oude-kaas-628665b01dea7b8f5009b248
 2. Click **Grab ingredient list** to kick off the web scraping and creation of the ingredient shopping list dataset.
 3. Click **Download full csv file** link below if you'd like to download the ingredient shopping list dataset as a csv file.
