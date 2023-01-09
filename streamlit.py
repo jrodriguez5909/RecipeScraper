@@ -25,8 +25,7 @@ if download:
     b64 = base64.b64encode(csv.encode()).decode()  # some strings
     linko = f'<a href="data:file/csv;base64,{b64}" download="Ingredients_list.csv">Download full csv file</a>'
     st.markdown(linko, unsafe_allow_html=True)
-    st.warning('Ingredient quantities follow serving size shown in the URL you provide so be mindful of this!',
-               icon="⚠️")
+    st.warning('Ingredient quantities follow serving size shown in the URL you provide so be mindful of this!', icon="⚠️")
     st.write("""
     • Ingredient shopping list below and available in csv format when clicking "Download full csv file" URL above:
     """)
