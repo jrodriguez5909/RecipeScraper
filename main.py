@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 from recipe_scrapers import scrape_me
-
+from stqdm import stqdm
 
 def replace_measurement_symbols(ingredients):
     """
@@ -62,7 +62,7 @@ def create_df(recipes):
     """
     df_list = []
 
-    for recipe in recipes:
+    for recipe in stqdm(range(len(recipes))):
         scraper = scrape_me(recipe)
         recipe_details = replace_measurement_symbols(scraper.ingredients())
 
