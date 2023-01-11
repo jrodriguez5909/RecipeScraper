@@ -62,7 +62,7 @@ def create_df(recipes):
     """
     df_list = []
 
-    for recipe in stqdm(range(len(recipes))):
+    for recipe in recipes:
         scraper = scrape_me(recipe)
         recipe_details = replace_measurement_symbols(scraper.ingredients())
 
