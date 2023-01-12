@@ -9,5 +9,6 @@ Planning meals is time-consuming and once you've determined what recipes you'll 
 The app is powered by **[this recipe scraping project](https://github.com/hhursev/recipe-scrapers#scrapers-available-for)**, which supports tons of great recipe websites but the app does not currently consider cases beyond the **⚠ NOTE** above.
 
 ## Future Product Increments
-* **ML Category Classification**: The "Category" column is currently mapped using a static dictionary i.e., have a look at the `df_create()` function in the `main.py` script. A trained classification model will map the Category column in the next release.
-* **Scraping Status Bar**: The app currently does not provide an indication on how much of the total job has been processed and what's left. A status bar will be shown in the frontend.
+![FIXME_icon!](https://raw.githubusercontent.com/awesomedata/apd-core/master/deploy/fixme-24.png "OK_icon") **ML Category Classification**: The "Category" column is currently mapped using a static dictionary i.e., have a look at the `df_create()` function in the `main.py` script. A trained classification model will map the Category column in the next release.
+
+![OK_icon!](https://raw.githubusercontent.com/awesomedata/apd-core/master/deploy/ok-24.png "OK_icon") **Scraping Status Bar**: The app currently does not provide an indication on how much of the total job has been processed and what's left. A status bar will be shown in the frontend.
