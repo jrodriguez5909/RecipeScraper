@@ -221,7 +221,7 @@ def create_df(recipes):
     print("Mapping foods to categories")
     
     res = map_food_category(df=res)
-    res = res.sort_values(by='Category')
+    res = res.sort_values(by='Category').reset_index(drop=True)
 
     print("Processing complete!")
 
