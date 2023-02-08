@@ -4,6 +4,7 @@ streamlit==0.76.0
 recipe-scrapers==14.26.0
 stqdm~=0.0.5
 joblib~=1.2.0
+deep-translator
 langdetect~=1.0.9
 fuzzywuzzy~=0.18.0
 sklearn~=0.0.post1
