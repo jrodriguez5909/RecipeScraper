@@ -1,0 +1,322 @@
+Food,Category
+Cows' milk,Dairy
+Milk skim,Dairy
+Buttermilk,Dairy
+"Evaporated, undiluted",Dairy
+Fortified milk,Dairy
+Powdered milk,Dairy
+"skim, instant",Dairy
+"skim, non-instant",Dairy
+Goats' milk,Dairy
+(1/2 cup ice cream),Dairy
+Cocoa,Dairy
+skim. milk,Dairy
+(cornstarch),Dairy
+Custard,Dairy
+Ice cream,Dairy
+Ice milk,Dairy
+Cream or half-and-half,Dairy
+or whipping,Dairy
+Cheese,Dairy
+uncreamed,Dairy
+Cheddar,Dairy
+"Cheddar, grated cup",Dairy
+Cream cheese,Dairy
+Processed cheese,Dairy
+Roquefort type,Dairy
+Swiss,Dairy
+Eggs raw,Dairy
+Eggs Scrambled or fried,Dairy
+Yolks,Fats & Oils
+Butter,Fats & Oils
+Hydrogenated cooking fat,Fats & Oils
+Lard,Fats & Oils
+Margarine,Fats & Oils
+"Margarine, 2 pat or",Fats & Oils
+Mayonnaise,Fats & Oils
+Corn oil,Fats & Oils
+Olive oil,Fats & Oils
+Safflower seed oil,Fats & Oils
+French dressing,Fats & Oils
+Thousand Island sauce,Fats & Oils
+Salt pork,Meat
+Bacon,Meat
+Beef,Meat
+Hamburger,Meat
+Ground lean,Meat
+Roast beef,Meat
+Steak,Meat
+"Steak, lean, as round",Meat
+Corned beef,Meat
+Corned beef hash canned,Meat
+Corned beef hash Dried,Meat
+Pot-pie,Meat
+Corned beef hash Stew,Meat
+chicken,Meat
+"Fried, breast or leg and thigh chicken",Meat
+Roasted chicken,Meat
+"Chicken livers, fried",Meat
+"Duck, domestic",Meat
+"Lamb, chop, broiled",Meat
+Leg roasted,Meat
+"Shoulder, braised",Meat
+"Pork, chop, 1 thick",Meat
+Ham pan-broiled,Meat
+"Ham, as ",Meat
+"Ham, canned, spiced",Meat
+Pork roast,Meat
+Pork sausage,Meat
+Turkey,Meat
+Veal,Meat
+Roast,Meat
+Clams,Seafood
+Cod,Seafood
+Crab meat,Seafood
+Fish sticks fried,Seafood
+Flounder,Seafood
+Haddock,Seafood
+Halibut,Seafood
+Herring,Seafood
+Lobster,Seafood
+Mackerel,Seafood
+Oysters,Seafood
+Oyster stew,Seafood
+Salmon,Seafood
+Sardines,Seafood
+Scallops,Seafood
+Shad,Seafood
+Shrimp,Seafood
+Swordfish,Seafood
+Tuna,Seafood
+Artichoke,Vegetables
+Asparagus,Vegetables
+Beans,Vegetables
+Lima,Vegetables
+"Lima, dry, cooked",Vegetables
+"Navy, baked with pork",Vegetables
+Red kidney,Vegetables
+Bean sprouts,Vegetables
+Beet greens,Vegetables
+Beetroots,Vegetables
+Broccoli,Vegetables
+Brussels sprouts,Vegetables
+Sauerkraut,Vegetables
+Steamed cabbage,Vegetables
+Carrots,Vegetables
+"Raw, grated",Vegetables
+"Strips, from raw",Vegetables
+Cauliflower,Vegetables
+Celery,Vegetables
+Stalk raw,Vegetables
+Chard steamed,Vegetables
+Collards,Vegetables
+Corn,Vegetables
+cooked or canned,Vegetables
+Cucumbers,Vegetables
+Dandelion greens,Vegetables
+Eggplant,Vegetables
+Endive,Vegetables
+Kale,Vegetables
+Kohlrabi,Vegetables
+"Lambs quarters, steamed",Vegetables
+Lentils,Vegetables
+Lettuce,Vegetables
+Iceberg,Vegetables
+Mushrooms canned,Vegetables
+Mustard greens,Vegetables
+Okra,Vegetables
+Onions,Vegetables
+"Raw, green",Vegetables
+Parsley,Vegetables
+Parsnips,Vegetables
+Peas,Vegetables
+"Fresh, steamed peas",Vegetables
+Frozen peas,Vegetables
+Split cooked peas,Vegetables
+heated peas,Vegetables
+Peppers canned,Vegetables
+"Peppers Raw, green, sweet",Vegetables
+Peppers with beef and crumbs,Vegetables
+"Potatoes, baked",Vegetables
+French-fried,Vegetables
+Potatoes Mashed with milk and butter,Vegetables
+"Potatoes, pan-tried",Vegetables
+Scalloped with cheese potatoes,Vegetables
+Steamed potatoes before peeling,Vegetables
+Potato chips,Vegetables
+Radishes,Vegetables
+Rutabagas,Vegetables
+Soybeans,Vegetables
+Spinach,Vegetables
+Squash,Vegetables
+"Winter, mashed",Vegetables
+Sweet potatoes,Vegetables
+Candied,Vegetables
+Tomatoes,Vegetables
+"Raw, 2 by 2 1/2",Vegetables
+Tomato juice,Vegetables
+Tomato catsup,Vegetables
+Turnip greens,Vegetables
+"Turnips, steamed",Vegetables
+"Watercress stems, raw",Fruits
+Apple juice canned,Fruits
+Apple vinegar,Fruits
+"Apples, raw",Fruits
+Stewed or canned,Fruits
+Apricots,Fruits
+"Dried, uncooked",Fruits
+Fresh,Fruits
+"Nectar, or juice",Fruits
+Avocado,Fruits
+Banana,Fruits
+Blackberries,Fruits
+Blueberries,Fruits
+Cantaloupe,Fruits
+Cherries,Fruits
+Cranberry sauce sweetened,Fruits
+Dates,Fruits
+Figs,Fruits
+"Fresh, raw figs",Fruits
+figs Canned with syrup ,Fruits
+"Fruit cocktail, canned",Fruits
+Grapefruit sections,Fruits
+"Grapefruit, fresh, 5"" diameter",Fruits
+Grapefruit juice,Fruits
+Grapes,Fruits
+"European, as Muscat, Tokay",Fruits
+Grape juice,Fruits
+Lemon juice,Fruits
+Lemonade concentratefrozen,Fruits
+Limeade concentrate frozen,Fruits
+Olives large,Fruits
+OlivesRipe,Fruits
+"Oranges 3"" diameter",Fruits
+Orange juice,Fruits
+Frozen ,Fruits
+Papaya,Fruits
+Peaches,Fruits
+Pears,Fruits
+"Raw, 3 by 2V",Fruits
+Persimmons,Fruits
+Pineapple,Fruits
+Pineapple Crushed,Fruits
+"Raw, diced",Fruits
+Pineapple juice,Fruits
+Plums,Fruits
+"Raw, 2"" diameter",Fruits
+Prunes,Fruits
+Prune juice,Fruits
+Raisins,Fruits
+Raspberries,Fruits
+"Raw, red",Fruits
+Rhubarb sweetened,Fruits
+Strawberries,Fruits
+Raw,Fruits
+Tangerines,Fruits
+Watermelon,Fruits
+Biscuits,Grains
+Bran flakes,Grains
+"Bread, cracked wheat",Grains
+Rye,Grains
+"White, 20 slices, or",Grains
+Whole-wheat,Grains
+Corn bread ground meal,Grains
+Cornflakes,Grains
+Corn grits cooked,Grains
+Corn meal,Grains
+Crackers,Grains
+"Soda, 2 1/2 square",Grains
+Farina,Grains
+Flour,Grains
+Wheat (all purpose),Grains
+Wheat (whole),Grains
+Macaroni,Grains
+Baked with cheese,Grains
+Muffins,Grains
+Noodles,Grains
+Oatmeal,Grains
+"Pancakes 4"" diam.",Grains
+"Wheat, pancakes 4"" diam.",Grains
+"Pizza 14"" diam.",Grains
+Popcorn salted,Grains
+Puffed rice,Grains
+Puffed wheat presweetened,Grains
+Rice,Grains
+Converted,Grains
+White,Grains
+Rice flakes,Grains
+Rice polish,Grains
+Rolls,Grains
+of refined flour,Grains
+Spaghetti with meat sauce,Grains
+with tomatoes and cheese,Grains
+Spanish rice,Grains
+Shredded wheat biscuit,Grains
+Waffles,Grains
+Wheat germ,Grains
+Wheat-germ cereal toasted,Grains
+Wheat meal cereal unrefined,Grains
+"Wheat, cooked",Grains
+Bouillon,Grains
+Noodle,Grains
+Apple betty,Sweets
+Bread pudding,Sweets
+Cakes,Sweets
+Chocolate fudge,Sweets
+Cupcake,Sweets
+Fruit cake,Sweets
+Gingerbread,Sweets
+"Plain, with no icing",Sweets
+Sponge cake,Sweets
+Candy,Sweets
+Chocolate creams,Sweets
+Fudge,Sweets
+Hard candies,Sweets
+Marshmallows,Sweets
+Milk chocolate,Sweets
+Chocolate syrup,Sweets
+Doughnuts,Sweets
+"Gelatin, made with water",Sweets
+Honey,Jams & Jellies
+Ice cream,Sweets
+Ices,Sweets
+preserves,Jams & Jellies
+Jellies,Jams & Jellies
+Molasses,Jams & Jellies
+Cane Syrup,Jams & Jellies
+"9"" diam. pie",Sweets
+Cherry Pie,Sweets
+Custard,Sweets
+Lemon meringue,Sweets
+Mince,Sweets
+Pumpkin Pie,Sweets
+Puddings Sugar,Sweets
+3 teaspoons sugar,Sweets
+"Brown, firm-packed, dark sugar",Jams & Jellies
+Syrup,Jams & Jellies
+table blends sugar,Jams & Jellies
+Tapioca cream pudding,Sweets
+Almonds,Seeds & Nuts
+roasted and salted,Seeds & Nuts
+Brazil nuts,Seeds & Nuts
+Cashews,Seeds & Nuts
+coconut sweetened,Seeds & Nuts
+Peanut butter,Seeds & Nuts
+"Peanut butter, natural",Seeds & Nuts
+Peanuts,Seeds & Nuts
+Pecans,Seeds & Nuts
+Sesame seeds,Seeds & Nuts
+Sunflower seeds,Seeds & Nuts
+Walnuts,Seeds & Nuts
+Beer,Drinks
+Gin,Drinks
+Wines,Drinks
+Table (12.2% alcohol),Drinks
+Carbonated drinks Artificially sweetened,Drinks
+Club soda,Drinks
+Cola drinks,Drinks
+Fruit-flavored soda,Drinks
+Ginger ale,Drinks
+Root beer,Drinks
+Coffee,Drinks
+Tea,Drinks
