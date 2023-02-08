@@ -221,7 +221,8 @@ def create_df(recipes):
     print("Mapping foods to categories")
     
     res = map_food_category(df=res)
-    
+    res = res.sort_values(by='Category')
+
     print("Processing complete!")
 
     return res
@@ -252,9 +253,10 @@ st.write("""
 
 recs = st.text_area('', height=50)
 
-download = st.button('Grab ingredient list')
+download = st.button('Grab ingredient list',type="primary")
 
 if download:
+    st.info('App is running, please wait...')
     recs = recs.split(",")
     df_download = create_df(recs)
     csv = df_download.to_csv()
@@ -266,3 +268,4 @@ if download:
     • Ingredient shopping list below and available in csv format when clicking "Download full csv file" URL above:
     """)
     st.dataframe(df_download)
+    st.balloons()
