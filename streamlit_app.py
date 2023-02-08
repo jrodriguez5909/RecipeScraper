@@ -253,7 +253,9 @@ st.write("""
 
 recs = st.text_area('', height=50)
 
-download = st.button('Grab ingredient list', type="primary")
+download = st.button('Grab ingredient list',
+                     type="primary",
+                     on_click=print("Grabbing ingredient list"))
 
 if download:
     st.info('App is running, please wait...')
