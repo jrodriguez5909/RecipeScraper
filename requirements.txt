@@ -7,5 +7,5 @@ joblib~=1.2.0
 deep-translator
 langdetect~=1.0.9
 fuzzywuzzy~=0.18.0
-sklearn~=0.0.post1
+#sklearn~=0.0.post1
 scikit-learn~=1.2.0
