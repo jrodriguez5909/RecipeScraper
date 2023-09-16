@@ -160,7 +160,8 @@ def create_df(recipes):
              .dropna(how='all', subset=oth_cols, axis=0))
 
     res = res.fillna(0)
-    res['Total'] = res.drop(['Ingredients', 'Measurement'], axis=1).sum(axis=1)
+    # res['Total'] = res.drop(['Ingredients', 'Measurement'], axis=1).sum(axis=1)
+    res['Total'] = res.sum(axis=1, numeric_only=True)
     res=res[res['Total'] !=0] #To drop rows that are being duplicated with 0 for some reason; will check later
 
     # Place "Total" column towards front
