@@ -118,7 +118,7 @@ def map_food_category(df):
     return df
 
 
-def create_df(recipes):
+def create_df(recipes, num_people=1):
     """
     Description:
     Creates one df with all recipes and their ingredients
@@ -149,7 +149,7 @@ def create_df(recipes):
 
                 item = ing_1[2]
                 measurement = ing_1[1]
-                quantity = float(ing_1[0])
+                quantity = float(ing_1[0])/2 * num_people
 
                 df_temp.loc[len(df_temp)] = [item, measurement, quantity]
                 df_list.append(df_temp)
@@ -245,19 +245,22 @@ st.write(
     "[See this app's GitHub ReadMe file for more info](%s)" % "https://github.com/jrodriguez5909/RecipeScraper#top-daily-stock-losers--trading-opportunities")
 st.write("""
 ## **App Instructions:**
-1. Populate the text box below with URLs for recipes you'd like to gather ingredient from - separate the URLs with commas e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10, https://www.hellofresh.nl/recipes/quiche-met-broccoli-en-oude-kaas-628665b01dea7b8f5009b248
-2. Click **Grab ingredient list** to kick off the web scraping and creation of the ingredient shopping list dataset.
-3. Click **Download full csv file** link below if you'd like to download the ingredient shopping list dataset as a csv file.
+1. Determine the amount of people (servings) you're cooking for. 
+2. Populate the text box below with URLs for recipes you'd like to gather ingredient from - separate the URLs with commas e.g., https://www.hellofresh.nl/recipes/chicken-parmigiana-623c51bd7ed5c074f51bbb10, https://www.hellofresh.nl/recipes/quiche-met-broccoli-en-oude-kaas-628665b01dea7b8f5009b248
+3. Click **Grab ingredient list** to kick off the web scraping and creation of the ingredient shopping list dataset.
+4. Click **Download full csv file** link below if you'd like to download the ingredient shopping list dataset as a csv file.
 """)
 
-recs = st.text_area('', height=50)
+num_people = st.number_input("Number of people you're cooking for:", min_value=1, max_value=20, value=1)
+
+recs = st.text_area("Your recipe URLs separated by commas per above instruction:", height=50)
 
 download = st.button('Grab ingredient list')  # type="primary" giving issues for some reason
 
 if download:
     st.info('App is running, please wait...')
     recs = recs.split(",")
-    df_download = create_df(recs)
+    df_download = create_df(recs, num_people)
     csv = df_download.to_csv()
     b64 = base64.b64encode(csv.encode()).decode()  # some strings
     linko = f'<a href="data:file/csv;base64,{b64}" download="Ingredients_list.csv">Download full csv file</a>'
