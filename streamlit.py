@@ -12,14 +12,6 @@ from stqdm import stqdm
 from deep_translator import GoogleTranslator
 from langdetect import detect
 from fuzzywuzzy import process
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import cross_val_score, cross_val_predict
-from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score, roc_curve
-from sklearn.preprocessing import LabelEncoder
 
 
 def replace_measurement_symbols(ingredients):
@@ -157,7 +149,7 @@ def create_df(recipes):
 
                 item = ing_1[2]
                 measurement = ing_1[1]
-                quantity = float(ing_1[0]) * 2
+                quantity = float(ing_1[0])
 
                 df_temp.loc[len(df_temp)] = [item, measurement, quantity]
                 df_list.append(df_temp)
@@ -180,7 +172,6 @@ def create_df(recipes):
         'Kipshoarma': ('Kalkoenshoarma')
     }
 
-    # reverse_label_ing = {x:k for k,v in ingredient_dict.items() for x in v}
     reverse_label_ing = {x: k for k, v in ingredient_dict.items() for x in (v if isinstance(v, tuple) else (v,))}
     df["Ingredients"].replace(reverse_label_ing, inplace=True)
 
