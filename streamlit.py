@@ -243,9 +243,6 @@ st.image(
     caption="What's for dinner?")
 
 st.write(
-    "test text for May")
-
-st.write(
     "[See this app's GitHub ReadMe file for more info](%s)" % "https://github.com/jrodriguez5909/RecipeScraper#top-daily-stock-losers--trading-opportunities")
 st.write("""
 ## **App Instructions:**
