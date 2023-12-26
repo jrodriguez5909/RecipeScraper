@@ -24,6 +24,7 @@ def replace_measurement_symbols(ingredients):
     """
     ingredients = [i.replace('¼', '0.25') for i in ingredients]
     ingredients = [i.replace('½', '0.5') for i in ingredients]
+    ingredients = [i.replace('⅔', '0.667') for i in ingredients]
     ingredients = [i.replace('¾', '0.75') for i in ingredients]
 
     return ingredients
@@ -135,7 +136,7 @@ def create_df(recipes, num_people=1):
         scraper = scrape_me(recipe)
         recipe_details = replace_measurement_symbols(scraper.ingredients())
 
-        recipe_name = recipe.split("https://www.hellofresh.nl/recipes/", 1)[1]
+        recipe_name = recipe.split("recipes/", 1)[1]
         recipe_name = recipe_name.rsplit('-', 1)[0]
         print("Processing data for " + recipe_name + " recipe.")
 
@@ -223,7 +224,6 @@ def create_df(recipes, num_people=1):
 
     return res
 
-
 def main():
     recipes = [
         'https://www.hellofresh.nl/recipes/luxe-burger-met-truffeltapenade-en-portobello-63ad875558b39f3da6083acd',
@@ -241,6 +241,10 @@ st.write("""# Recipe Scraper""")
 st.image(
     "https://images.unsplash.com/photo-1577308856961-8e9ec50d0c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMG9uJTIwdGFibGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
     caption="What's for dinner?")
+
+st.write(
+    "test text for May")
+
 st.write(
     "[See this app's GitHub ReadMe file for more info](%s)" % "https://github.com/jrodriguez5909/RecipeScraper#top-daily-stock-losers--trading-opportunities")
 st.write("""
